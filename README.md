@@ -29,3 +29,10 @@ npx tailwindcss init
     - Search bar
     - Movie suggestions
 
+3)
+npm i -D react-router-dom
+
+use "FORMIK" for large forms, many fields
+
+let's write FORM validations
+
