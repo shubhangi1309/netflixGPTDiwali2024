@@ -35,4 +35,14 @@ npm i -D react-router-dom
 use "FORMIK" for large forms, many fields
 
 let's write FORM validations
+useRef Hook => let's us reference a value that's not needed for rendering
+const email = useRef(null);
+<input ref={email}/>
+email.current.value
 
+Firebase
+create NetflixGPT project > click </> icon > select Host option
+npm install firebase
+create firebase.js (manual) paste code given below "npm install firebase" on firebase website
+enable authentication in firebase GPT app
+npm install -g firebase-tools
