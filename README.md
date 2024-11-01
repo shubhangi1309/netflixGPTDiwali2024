@@ -126,4 +126,10 @@ Inside Header component it makes sense
 we'll remove navigation from everywhere lese
 since onAuthStateChange will take care of it
 
-
+Hygeine practice
+when C. unmounts unSubscribe to "onAuthStateChanged"
+# onAuthStateChanged returns a unsubscribe function
+make account on TMDB
+create API get access token for authorisation => goto DOC => Movie list => Now playing movies
+# React strict mode makes api calls twice because React mounts C. twice
+let's add movie data to slice
