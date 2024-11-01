@@ -46,3 +46,7 @@ npm install firebase
 create firebase.js (manual) paste code given below "npm install firebase" on firebase website
 enable authentication in firebase GPT app
 npm install -g firebase-tools
+firebase login
+firebase init
+# Put your static files (e.g., HTML, CSS, JS) in your app's deploy directory (the default is "public"). Then, run this command from your app's root directory:
+firebase deploy
