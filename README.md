@@ -132,4 +132,11 @@ when C. unmounts unSubscribe to "onAuthStateChanged"
 make account on TMDB
 create API get access token for authorisation => goto DOC => Movie list => Now playing movies
 # React strict mode makes api calls twice because React mounts C. twice
-let's add movie data to slice
+let's add movie data to slice customHook
+<!-- Building browsing page -->
+MainContainer
+    videoBG
+    videoTitle
+SecondaryContainer
+    MovieList * n
+    cards * n
