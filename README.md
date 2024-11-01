@@ -1,4 +1,4 @@
-# 31 Oct 2024 Diwali
+# 31 Oct 2024 Diwali -------------EPISODE 14----------
 # Project scaffold
 
 1) 
@@ -56,7 +56,7 @@ Select
 # Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
 What do you want to use as your public directory? (public) 
 build
-Configure as a single-page app (rewrite all urls to /index.html)? (y/N
+Configure as a single-page app (rewrite all urls to /index.html)? (y/N)
 N
 ? Set up automatic builds and deploys with GitHub?
 No
@@ -116,3 +116,14 @@ Password Auth> SignOut logic from firebase doc
 For adding User's Display Name in Sign Up form
 Manage Users > Update a user's profile
 Fetch Movies from TMDB
+
+-------------EPISODE 15----------
+solve bug => user able to access /browse without authentication
+I will have to add useEffect of Body C. to such a place where it comes 
+inside 
+Router Provider and is accessible by entire app
+Inside Header component it makes sense
+we'll remove navigation from everywhere lese
+since onAuthStateChange will take care of it
+
+
