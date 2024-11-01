@@ -1,3 +1,4 @@
+# 31 Oct 2024 Diwali
 # Project scaffold
 
 1) 
@@ -42,6 +43,7 @@ email.current.value
 
 Firebase
 create NetflixGPT project > click </> icon > select Host option
+# 1 Nov 2024
 project > Authentication > select Email password click Enable
 npm install firebase
 create firebase.js (manual) paste code given below "npm install firebase" on firebase website
@@ -69,3 +71,20 @@ when we wrote build we were telling firebase that you have to deploy using this 
 will give hosting url
 Hosting URL: https://netflixgpt-6abde.web.
 this is live running aplication
+
+# create signUp User account in firebase
+check firebase documentation
+<!-- Reading documentation is superpower of developer -->
+documentation > authentication > left menu select Web > select Password Authentication
+we'll use Modular API
+
+Create password based account (SignUp)
+Sign In (SignIn)
+everything requires "auth" to call any API
+
+We will getAuth once in central place (instead of doing it again and again in C.)
+So put it in firebase.js
+
+createUserWithEmailAndPassword this is giving me PROMISE
+on which I do .then & .catch
+
