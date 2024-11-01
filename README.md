@@ -88,3 +88,31 @@ So put it in firebase.js
 createUserWithEmailAndPassword this is giving me PROMISE
 on which I do .then & .catch
 
+signInWithEmailAndPassword same
+
+once user SignIn/Up I will store user's data to redux store
+
+npm i -D @reduxjs/toolkit
+npm i react-redux
+
+create appStore
+create userSlice
+on root of app provide appStore
+
+Utility given to us by Firebase 
+documentation > authentication > select Web > select Manage Users in Firebase
+onAuthStateChanged API (it's like a event listener)
+this API gets called whenever there is SignIn/Up, SignOut (authentication state change)
+we will use it to add, remove user from to store
+
+I want to call this API only once
+so add it to useEffect in Body C.
+
+# we used useEffect to "setup" the listener just once
+# useNavigate hook to navigate on authentication to respective page
+
+Password Auth> SignOut logic from firebase doc
+
+For adding User's Display Name in Sign Up form
+Manage Users > Update a user's profile
+Fetch Movies from TMDB
