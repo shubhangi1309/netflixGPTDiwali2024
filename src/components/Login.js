@@ -25,8 +25,6 @@ const Login = () => {
 
   const handleSubmit = () => {
     // Validate form data
-    console.log(email.current.value);
-
     const message = validateData(email.current.value, password.current.value);
     setErrorMessage(message);
     if (message !== "Successful!") return;
@@ -73,7 +71,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;

@@ -3,7 +3,6 @@ import useMovieTrailer from "../customHooks/useMovieTrailer";
 
 const VideoBackground = ({ movieId }) => {
   const trailor = useSelector((store) => store.movies?.trailerVideo);
-  console.log("trailor=", trailor);
 
   useMovieTrailer(movieId);
 
