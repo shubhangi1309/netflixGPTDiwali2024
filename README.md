@@ -140,3 +140,13 @@ MainContainer
 SecondaryContainer
     MovieList * n
     cards * n
+
+# early RETURN in MainContainer
+if(movies === null) return; // early return
+if(!movies) return; // early return
+
+# update store with movie data
+- planning for main container, secondary container
+- fetch data for trailer video
+- update store with trailer video data
+- embed the youtube video 
