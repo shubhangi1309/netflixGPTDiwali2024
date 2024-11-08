@@ -20,3 +20,12 @@ export const API_OPTIONS = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+];
+
+export const OPENAI_KEY =
+  "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";

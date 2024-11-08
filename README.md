@@ -162,8 +162,8 @@ cards _ n
 if(movies === null) return; // early return
 if(!movies) return; // early return
 
+-----------2 Nov 2024-------------
 # update store with movie data
-
 - planning for main container, secondary container
 - fetch data for trailer video
 - update store with trailer video data
@@ -174,3 +174,27 @@ if(!movies) return; // early return
   MovieList - trending
   MovieList - horror
   MovieList
+
+-----------7 Nov 2024-------------
+GPT search I was stuck here because video title was overlapping and the button was un-clicakble 
+so resolved it by adding z-index to header
+GPT search bar 
+GPT Movie Suggestions
+multi-language, slice
+
+platform.openai.com => profile > API keys > put in Constants file
+
+npm i --save openai
+this will given helper fn to use OPEN AI API
+create file openai.js
+google npm openai scroll down you will find initialization code
+
+search "old hindi movies"
+"funny Indian retro movies"
+
+on search button click create function which gives movies, write query for it
+
+in gptSLice addMovie results 
+
+------ 8 nov 2024------
+build gptMovieSuggestion
