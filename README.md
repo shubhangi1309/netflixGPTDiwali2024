@@ -198,3 +198,11 @@ in gptSLice addMovie results
 
 ------ 8 nov 2024------
 build gptMovieSuggestion
+securing API keys
+
+------ 9 nov 2024------
+understanding "memoization" of data in our apps
+we've already stored the horizontal stored movie card info in appStore
+so we will check if the store already has then don't make API call
+make API call only for the first time to store movies in APPStore
+this is memoization technique

@@ -1,13 +1,14 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import lang from "../utils/languageConstants";
 import { useRef } from "react";
 import client from "../utils/openai";
 import { API_OPTIONS } from "../utils/constants";
+import { addGptMovieResult } from "../utils/gptSlice";
 
 const GPTSearchBar = () => {
   const searchInput = useRef();
   const selectedLanguage = useSelector((store) => store.config.lang);
-
+  const dispatch = useDispatch();
    // search movie in TMDB
    const searchMovieTMDB = async (movieName) => {
     const data = await fetch(
@@ -49,9 +50,9 @@ const GPTSearchBar = () => {
   };
 
   return (
-    <div className="pt-[10%] flex justify-center">
+    <div className="pt-[35%] md:pt-[10%] flex justify-center">
       <form
-        className="w-1/2 bg-black grid grid-cols-12"
+        className="w-full md:w-1/2 bg-black grid grid-cols-12"
         onSubmit={(e) => e.preventDefault()}
       >
         <input
